@@ -1,0 +1,76 @@
+/* src/pages/About.css */
+
+/* src/pages/About.css */
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 80px 20px 40px; /* ✅ 80px top padding to avoid navbar overlap */
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #0c0c0c;
+  box-sizing: border-box;
+}
+
+.about-container .content {
+  width: 100%;         /* ✅ Take full available width */
+  max-width: none;     /* ✅ Remove max-width limit */
+  margin: 0;           /* ✅ Remove centering */
+  line-height: 1.7;
+}
+
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #08002c;
+}
+
+.about-container h2 {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #08002c;
+}
+
+.about-container p {
+  margin-bottom: 16px;
+}
+
+.about-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-container li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #14b866;
+}
+
+.about-container blockquote {
+  margin-top: 40px;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #14b866;
+  padding-left: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 80px 20px 20px; /* Adjust top padding on smaller screens */
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+}

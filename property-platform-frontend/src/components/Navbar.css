@@ -1,0 +1,111 @@
+/* Navbar Base Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #08002c;
+  color: white;
+  padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap; /* ✅ Allow wrapping for all screens */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #14b866;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Link Containers */
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+/* ✅ Split left and right sections */
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  margin-right: auto;
+}
+
+.navbar-right button.logout {
+  margin-left: 12px;
+  padding: 6px 12px;
+  background-color: #14b866;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar-right button.logout:hover {
+  background-color: #10a65b;
+}
+
+/* ✅ Medium and Below (Tablet + Mobile): Sidebar layout below navbar */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #08002c;
+    padding: 10px 0;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar-left a,
+  .navbar-right a,
+  .navbar-right button.logout {
+    padding: 10px 20px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+  }
+}

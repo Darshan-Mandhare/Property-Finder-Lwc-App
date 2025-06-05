@@ -1,0 +1,58 @@
+/* src/components/Layout.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.site-header {
+  background-color: #08002c;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.site-header .logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.site-header nav {
+  margin-top: 10px;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.site-header nav a:hover {
+  color: #14b866;
+}
+
+/* Main content */
+.site-main {
+  /* padding: 20px 40px; */
+  min-height: 70vh;
+  background-color: #fff;
+}
+
+/* Footer styles */
+.site-footer {
+  background-color: #08002c;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
